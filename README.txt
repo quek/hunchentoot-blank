@@ -8,6 +8,6 @@ MySQL を使っています。
 
 echo 'create database hunchentoot_blank default character set utf8;' | mysql -u root
 
-次の実行して http://localhost:8888/ にアクセスしてください。
+次を実行して http://localhost:8888/ にアクセスしてください。
 
 (hunchentoot-blank::start)
