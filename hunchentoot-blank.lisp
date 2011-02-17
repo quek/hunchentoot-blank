@@ -185,7 +185,13 @@ password に hash-password したものを設定する。"
 
 (defmacro define-page (description lambda-list &body body)
   "ページ定義。
-引数は hunchentoot:define-easy-handler と同じ。"
+
+description
+hunchentoot:define-easy-handler に加えて
+ログインが必要な場合は :login-require-p t を指定する。
+
+lambda-list
+hunchentoot:define-easy-handler と同じ。"
   (let ((login-required-p (and (listp description)
                                (getf (cdr description) :login-require-p))))
     (when (listp description)
