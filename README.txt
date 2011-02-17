@@ -1,0 +1,10 @@
+Hunchentoot, CL-WHO, CLSQL を使ったブランクプロジェクトです。
+
+MySQL を使っています。
+シェルから次のコマンドを実行してデータベースを作成してください。
+
+echo 'create database hunchentoot_blank default character set utf8;' | mysql -u root
+
+次の実行して http://localhost:8888/ にアクセスしてください。
+
+(hunchentoot-blank::start)
